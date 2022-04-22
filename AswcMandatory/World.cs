@@ -9,6 +9,9 @@ namespace AswcMandatory
 {
     public class World
     {
+        /// <summary>
+        /// The class for defining the world our creatures will roam in.
+        /// </summary>
         public int MaxX { get; set; }
         public int MaxY { get; set; }
 
@@ -16,17 +19,6 @@ namespace AswcMandatory
         {
             this.MaxX = maxX;
             this.MaxY = maxY;
-        }
-
-        public static void Main(string[] args)
-        {
-            Creature c1 = new Creature("Bjørn Ironside", 100, null);
-            Creature c2 = new Creature("Ivar The Boneless", 100, null);
-
-            Console.WriteLine("=================================");
-            Console.WriteLine();
-            c2.Hit(50);
-            Console.WriteLine($"{c2.Name} has been dealt 50 damage! {c2.Name}' health is now {c2.Hitpoints}");
         }
     }
 }
